@@ -1,0 +1,40 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.box {
+  background-color: #d2c2a1;
+  border-radius: 10px;
+  padding: 20px;
+  filter: drop-shadow(5px 10px 4px #6f5e41);
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #7b6849;
+  color: white;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
