@@ -1,59 +1,86 @@
-:root{
-    --size: 400px;
+:root {
+  --size: 400px;
 }
-#notescontain{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    /* padding: 50px; */
-}
-.createnote{
-    position: relative;
-    width: var(--size);
-    height: var(--size);
-    background: rgba(255,  255,255, 0.15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6rem;
-    cursor: pointer;
-    filter: drop-shadow(5px 10px 5px#7b6849 );
-}
-/* .createnote i{
-    position: absolute;
-    color: #fff;
-} */
-.creatnotebox{
-    position: relative;
-    width: var(--size);
-    height: var(--size);
-    z-index: 50;
-   /* display: none; */
-    
-}
-.creatnotebox textarea{
-    background-color: lemonchiffon;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: var(--size);
-    height: var(--size);
-    border: none;
-    outline: none;
-    padding: 20px;
-    font-size: 1rem;
-    resize: none;
-    font-family: 'Shantell Sans', cursive;
 
+#notescontain {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
-#notescontain #notes{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: flex-start;
-    align-items: flex-start;
+
+.addbutton {
+  width: 100px; /* ✅ Made bigger for visibility */
+  height: 40px;
+  margin-top: 10px;
+  background-color: #7b6849; /* Changed from black to match theme */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.addbutton:hover {
+  background-color: #5e5239; /* subtle hover effect */
+}
+
+.deletebutton {
+  margin-top: 5px;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.deletebutton:hover {
+  background-color: #a93226; /* hover effect */
+}
+
+.createnote {
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(5px 10px 5px #7b6849);
+}
+
+.creatnotebox {
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  flex-direction: column; /* ✅ So textarea + button align vertically */
+  align-items: center;
+  gap: 10px; /* spacing between textarea and button */
+}
+
+.creatnotebox textarea {
+  background-color: lemonchiffon;
+  width: 100%;
+  height: calc(var(--size) - 50px); /* leave space for button */
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+  border-radius: 5px;
+  font-family: "Shantell Sans", cursive;
+}
+
+#notescontain #notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }

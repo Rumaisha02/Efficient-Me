@@ -4,26 +4,26 @@ import { Link } from 'react-router-dom'
   return (
     <div>
       <div className="sidebar flex">
-        <Link to="/todo">
+        <Link to="/dashboard/todo">
           <div>
             <button className="button-styling">
-              <img src="todolist.svg" alt="To Do List" />
+              <img src="/todolist.svg" alt="To Do List" />
             </button>
           </div>
         </Link>
 
-        <Link to="/notes">
+        <Link to="/dashboard/notes">
           <div>
             <button className="button-styling">
-              <img src="notes.svg" alt="Notes" />
+              <img src="/notes.svg" alt="Notes" />
             </button>
           </div>
         </Link>
 
-        <Link to="/progress">
+        <Link to="/dashboard/progress">
           <div>
             <button className="button-styling">
-              <img src="progress.svg" alt="Progress" />
+              <img src="/progress.svg" alt="Progress" />
             </button>
           </div>
         </Link>

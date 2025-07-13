@@ -10,9 +10,9 @@ import { Outlet } from 'react-router-dom'
       <Header />
       <div className="flex">
         <Sidebar />
-        <div className="main-content">
-          <PomodoroTimer />
+        <div  style={{ flex: 1, display: 'flex', justifyContent: 'space-between' }}>
           <Outlet /> {/* This renders Notes/ToDo/Progress depending on route */}
+          <PomodoroTimer />
         </div>
       </div>
     </>

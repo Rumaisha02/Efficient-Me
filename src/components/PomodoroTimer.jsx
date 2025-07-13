@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
+import './PomodoroTimer.css'
  function PomodoroTimer() {
   // State to manage minutes, seconds, work/break mode and running status
   const [minutes, setMinutes] = useState(25)

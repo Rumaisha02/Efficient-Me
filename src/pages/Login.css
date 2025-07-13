@@ -1,9 +1,23 @@
-.login-page {
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  background-image: url(../assets/bgbgbg.jpg); /* Adjust path if needed */
+}
+
+body {
+  background: url('/backgroundImage.jpg') no-repeat center center fixed;
   background-size: cover;
+}
+
+.login-page {
+  margin: 0;
+  padding: 5px;
+  width: 98vw;
+  height: 98vh;
+  /* background-image: url(/backgroundImage.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,8 +54,43 @@ h2 {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .login-button:hover {
   background-color: #5e5239;
+}
+
+
+
+/* Form inputs */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+
+}
+
+/* Login buttons */
+/* .login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #7b6849;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+} */
+
+.login-container hr {
+  width: 80%;
+  margin: 15px 0;
+  border: none;
+  border-top: 1px solid #ccc;
 }
