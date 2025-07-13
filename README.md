@@ -15,14 +15,19 @@ ZenStudy is a web app that helps you organize your study sessions with a clean, 
 
  **User Authentication**
   - Login with Google or Email/Password (secure with Firebase Auth)
+    
  **To-Do List**
   - Add, complete, and delete tasks with persistence
+    
  **Notes**
   - Save up to 2 quick notes
+    
  **Pomodoro Timer**
   - Manage study and break cycles effectively
+    
  **Progress Tracker**
   - Track and update your goals with visual progress bars
+    
 **Cloud Sync**
   - Data persists across sessions using Firebase Firestore
 
